@@ -99,7 +99,7 @@ Error Code	Error
 
 
 
-
+# NOTE: the ping sweep and port scanner will only work on a class c network
 
 
 
