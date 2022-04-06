@@ -1,6 +1,6 @@
-these are my notes from my bash class I took at itprotv!
+# these are my notes from my bash class I took at itprotv!
 
-below are examples of how to manipulate strings of data. 
+# below are examples of how to manipulate strings of data. 
 
 #NOTE: $ iconv -f utf8 -t utf16 file1.txt  >  file2.txt
 
@@ -61,3 +61,63 @@ Starwars
                                                                       
 ┌──(kali㉿kali)-[~]
 └─$ 
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+	How to encode and decode base64 on the command line
+
+┌──(kali㉿kali)-[~]
+└─$ echo "PhatPanda" | base64          	# This is encoding the word 'PhatPanda' into base64
+UGhhdFBhbmRhCg==
+                                                                      
+┌──(kali㉿kali)-[~]
+└─$ echo "UGhhdFBhbmRhCg==" | base64 --decode 		# This is decoding the string 'UGhhdFBhbmRhCg=='
+PhatPanda
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+	Error handling in Bash
+
+Exit code status 
+
+$ echo $?		# This will give you the status code of the last command run
+
+	Common Error Codes 
+Error Code	Error
+2	Misuse of shell builtins (according to Bash documentation)
+126	Command invoked cannot execute
+127	Command not found
+128	Invalid argument to exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
